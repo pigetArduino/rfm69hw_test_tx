@@ -45,7 +45,7 @@
 #define FREQUENCY     RF69_868MHZ
 //#define FREQUENCY     RF69_915MHZ
 #define ENCRYPTKEY    "sampleEncryptKey" //exactly the same 16 characters/bytes on all nodes!
-#define IS_RFM69HCW   false // set to 'true' if you are using an RFM69HCW module
+#define IS_RFM69HCW   true // set to 'true' if you are using an RFM69HCW module
  
 //*********************************************************************************************
 #define SERIAL_BAUD   115200
@@ -63,7 +63,7 @@ int16_t packetnum = 0;  // packet counter, we increment per xmission
 RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN);
  
 void setup() {
-  while (!Serial); // wait until serial console is open, remove if not tethered to computer
+  //while (!Serial); // wait until serial console is open, remove if not tethered to computer
   Serial.begin(SERIAL_BAUD);
  
   Serial.println("Arduino RFM69HCW Transmitter");
@@ -80,7 +80,7 @@ void setup() {
   if (IS_RFM69HCW) {
     radio.setHighPower();    // Only for RFM69HCW & HW!
   }
-  radio.setPowerLevel(31); // power output ranges from 0 (5dBm) to 31 (20dBm)
+  radio.setPowerLevel(0); // power output ranges from 0 (5dBm) to 31 (20dBm)
   
   radio.encrypt(ENCRYPTKEY);
   
