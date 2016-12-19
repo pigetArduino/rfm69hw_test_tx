@@ -6,7 +6,7 @@ Total:
 
 # Wiring
 RFM69 module works at 3.3V , we need to use a voltage divider except for **MISO/DI0**    
-![RFM69_nano](![rfm69_nano](https://github.com/pigetArduino/rfm69hw_test_tx/raw/master/doc/arduino_nano_rfm69_wiring.png)
+![RFM69_nano](https://github.com/pigetArduino/rfm69hw_test_tx/raw/master/doc/arduino_nano_rfm69_wiring.png)
 
 ```
 RFM69 -----
