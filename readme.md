@@ -1,12 +1,12 @@
 # Components
 * Arduino nano : 2.5€
 * RFM69 (866Mhz) :
-* 5V --> 3.3V : 
+* 5V --> 3.3V :     
 Total:
 
 # Wiring
-RFM69 module works at 3.3V , we need to use a voltage divider except for **MISO/DI0**
-![RFM69_nano](![rfm69_nano](https://github.com/pigetArduino/rfm69hw_test_tx/raw/master/doc/arduinonano_rfm69_wiring.png)
+RFM69 module works at 3.3V , we need to use a voltage divider except for **MISO/DI0**    
+![RFM69_nano](![rfm69_nano](https://github.com/pigetArduino/rfm69hw_test_tx/raw/master/doc/arduino_nano_rfm69_wiring.png)
 
 ```
 RFM69 -----
